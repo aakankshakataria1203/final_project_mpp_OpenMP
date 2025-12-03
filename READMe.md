@@ -96,7 +96,7 @@ Run the unit tests to ensure all schedulers process exactly the required number 
 Test 1: Basic task submission... counter=100 (expected 100) PASS
 ...
 Test 5: HETEROGENEOUS scheduling... counter=50 (expected 50) PASS
-✓ ALL TESTS COMPLETED!
+ALL TESTS COMPLETED!
 ```
 
 ### Step 2: Run Benchmarks
