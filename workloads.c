@@ -105,3 +105,17 @@ void run_mixed_workload(TaskScheduler* sched, int num_tasks) {
        }
    }
 }
+
+void fine_grained_task(void* arg) {
+    volatile int *val = (int*)arg;
+    *val += 1;
+}
+
+void run_fine_grained_workload(TaskScheduler *sched, int num_tasks) {
+    int *dummy_arg = malloc(sizeof(int));
+    *dummy_arg = 0;
+    
+    for (int i = 0; i < num_tasks; i++) {
+        scheduler_submit(sched, fine_grained_task, dummy_arg, TASK_LIGHT);
+    }
+}
