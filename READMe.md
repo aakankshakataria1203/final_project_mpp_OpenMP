@@ -78,14 +78,6 @@ This produces two executables:
 - `benchmark` - Runs the full performance suite (Mixed Workload + Stress Test).
 - `test_correctness` - Verifies that no race conditions exist.
 
-### Compiler Flags Used
-```
--O3          : Maximum optimization level
--fopenmp     : Enable OpenMP runtime
--std=gnu11   : C11 standard with GNU extensions
--Wall -Wextra: All warnings enabled
-```
-
 ---
 
 ## Running the Project
@@ -190,15 +182,6 @@ The project demonstrates a critical inflection point where lock-free scheduling 
 - **Fine-Grained**: Lock-free is 836x faster; synchronization overhead dominates the execution profile.
 
 This validates the theoretical foundation: **Lock-free programming is not an optimization; it is a requirement for scalable fine-grained parallelism.**
-
----
-
-## Compiler & Environment
-
-- **Language**: C11 (GNU11 extensions)
-- **Parallel Runtime**: OpenMP 4.5+
-- **Tested On**: GCC 8.x, Virginia Tech ARC Dogwood Cluster (16-core shared-memory node)
-- **Optimization**: `-O3 -fopenmp`
 
 ---
 
