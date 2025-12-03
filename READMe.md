@@ -1,5 +1,5 @@
-# Adaptive Task Scheduling Engine using OpenMP
-## Lock-Free Concurrent Algorithm Implementation
+# OpenMP Lock-Free Task Scheduler
+## Comparative Analysis of Lock-Free vs. Lock-Based Scheduling
 
 ---
 
