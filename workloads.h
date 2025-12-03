@@ -28,5 +28,6 @@ void medium_task(void* arg);
 void heavy_task(void* arg);
 void run_mixed_workload(TaskScheduler* sched, int num_tasks);
 
+void run_fine_grained_workload(TaskScheduler *sched, int num_tasks);
 
 #endif
